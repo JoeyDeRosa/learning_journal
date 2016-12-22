@@ -1,0 +1,8 @@
+{% extends "layout.jinja2" %}
+    {% block body %}
+        <section>
+            <a href="{{request.route_url('update', id=title_list.id)}}">EDIT</a>
+            <h2>{{title_list['title']}}</h2>
+            <p>{{title_list['body']}}</p>
+        </section>
+    {% endblock %}

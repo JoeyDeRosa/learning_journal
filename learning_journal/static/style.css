@@ -1,0 +1,41 @@
+header {
+  background-color: #262626;
+  color: #8c8c8c;
+}
+
+section {
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.entry {
+  color: white;
+  background-color: #8c8c8c;
+  width: 66%;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 26px;
+}
+
+ul {
+  padding: 0;
+}
+
+.input .date {
+  text-align: left;
+}
+
+.body {
+  height: 300px;
+  width: 100%;
+}
+
+input {
+  width: 95%;
+}
