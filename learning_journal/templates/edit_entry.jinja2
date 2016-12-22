@@ -1,0 +1,11 @@
+{% extends "layout.jinja2" %}
+  {% block body %}
+    <section class="input">
+      <h3>Title</h3>
+      <input type="text" name="title" value="{{title_list['title']}}">
+      <h3>Body</h3>
+      <textarea rows='20' cols='150'>
+        {{title_list['body']}}
+      </textarea>
+    </section>
+  {% endblock %}

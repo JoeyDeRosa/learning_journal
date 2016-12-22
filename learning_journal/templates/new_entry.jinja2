@@ -1,0 +1,15 @@
+{% extends "layout.jinja2" %}
+  {% block body %}
+    <section class="input">
+      <form method="POST"
+        <h3>Date</h3>
+        <input type="text" name="date">
+        <h3>Title</h3>
+        <input type="text" name="title">
+        <h3>Body</h3>
+        <textarea rows='20' cols='150' name="body">
+        </textarea>
+        <input type="submit" value="Submit">>
+      </form>
+    </section>
+  {% endblock %}
