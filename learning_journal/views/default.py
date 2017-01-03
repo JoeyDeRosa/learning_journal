@@ -6,7 +6,7 @@ from sqlalchemy.exc import DBAPIError
 from ..models import Entry
 
 
-@view_config(route_name='create', renderer='../templates/new_entry.jinja2')
+@view_config(route_name='create', renderer='../templates/new_entry.jinja2', permission='add')
 def create_view(request):
     if request.method == "POST":
         new_title = request.POST["title"]
@@ -37,7 +37,7 @@ def detail_view(request):
     return {'title_list': detail_entry}
 
 
-@view_config(route_name='update', renderer='../templates/edit_entry.jinja2')
+@view_config(route_name='update', renderer='../templates/edit_entry.jinja2', permission='add')
 def update_view(request):
     entry = request.dbsession.query(Entry)
     detail_entry = entry.filter(Entry.id == request.matchdict['id']).first()
